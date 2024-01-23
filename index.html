@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+<!-- Daisy ui link-->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- google fonts link  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- tailwind costume link -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'common-btn': '#FF4240',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- custom style -->
+  <style>
+    .font-manrope{
+        font-family: 'Manrope', sans-serif;
+    }
+  </style>
+
+</head>
+<body class="font-manrope">
+    <!-- header section -->
+   <header class="container mx-auto">
+    <!-- nav section -->
+    <nav>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                 
+                    <li><a href="" class="text-[1rem] text-[#FF4240] font-semibold">Home</a></li>
+                <li><a href="" class="text-[1rem] ">About</a></li>
+                <li><a href="" class="text-[1rem]">Pages</a></li>
+                <li><a href="" class="text-[1rem]">Blog</a></li>
+                <li><a href="" class="text-[1rem]">Contact</a></li>
+                </ul>
+              </div>
+              <a class=" text-[2.25rem] font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="flex gap-11 menu-horizontal px-1 ">
+                <li><a href="" class="text-[1rem] text-[#FF4240] font-semibold">Home</a></li>
+                <li><a href="" class="text-[1rem] ">About</a></li>
+                <li><a href="" class="text-[1rem]">Pages</a></li>
+                <li><a href="" class="text-[1rem]">Blog</a></li>
+                <li><a href="" class="text-[1rem]">Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end gap-6">
+                <img src="images/Frame.svg" alt="">
+              <a class="px-6 py-4 rounded-lg text-[1.25rem] text-white font-bold bg-common-btn">Get Ticket</a>
+            </div>
+          </div>
+
+    </nav>
+<!-- nav end -->
+<!-- carousel section -->
+<div class="my-14">
+    <div class="carousel w-full ">
+        <div id="slide1" class="carousel-item relative w-full ">
+          <img src="images/1.png" class="w-full   bg-cover"  />
+          <div class="static md:absolute bottom-6 md:right-6">
+            <div class="bg-[#131318] rounded-[1rem] p-8 ">
+                <h3 class="text-[1.5rem] font-extrabold text-white">Meet all the heroes from the field</h3>
+                <p class="text-[1rem] text-[#FFFFFF99] font-medium">The modern game of hockey emerged in England in <br> the mid-18th century </p>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full ">
+
+          <img src="images/4.png" class="w-full md:h-auto bg-cover" />
+          <div class="static md:absolute bottom-6 md:right-6">
+            <div class="bg-[#131318] rounded-[1rem] p-8 ">
+                <h3 class="text-[1.5rem] font-extrabold text-white">Meet all the heroes from the field</h3>
+                <p class="text-[1rem] text-[#FFFFFF99] font-medium">The modern game of hockey emerged in England in <br> the mid-18th century </p>
+            </div>
+          </div>
+          
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="images/1.png" class="w-full " />
+          <div class="static md:absolute bottom-6 md:right-6">
+            <div class="bg-[#131318] rounded-[1rem] p-8 ">
+                <h3 class="text-[1.5rem] font-extrabold text-white">Meet all the heroes from the field</h3>
+                <p class="text-[1rem] text-[#FFFFFF99] font-medium">The modern game of hockey emerged in England in <br> the mid-18th century </p>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        
+        </div>
+      </div>
+      <div class="md:invisible">
+        <div class="bg-[#131318] rounded-[1rem] p-8 ">
+            <h3 class="text-[1.12rem] md:text-[1.5rem] font-extrabold text-white">Meet all the heroes from the field</h3>
+            <p class="text-[1rem] text-[#FFFFFF99] font-medium">The modern game of hockey emerged in England in <br> the mid-18th century </p>
+        </div>
+</div>
+
+   </header>
+   <!-- main section -->
+   <main class="container mx-auto">
+    <!-- professional section -->
+    <section class="mb-24 mt-6 md:mt-0">
+        <div class="space-y-6 ">
+            <h3 class="text-[1.37rem] md:text-[2.25rem] font-extrabold text-[#131318] text-center">Professional Hockeys Club</h3>
+            <p class="text-center text-[0.87rem] md:text-[1rem] font-medium text-[#212124] opacity-60">The roots of hockey are buried deep in antiquity. Historical records show that <br> a crude form of the game was played</p>
+        </div>
+        <!-- container -->
+        <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12">
+            <div class=" mx-auto">
+                <div style="background-image: url(images/red.svg);" class="bg-no-repeat w-[120px] h-[120px] flex items-center justify-center">
+                    
+                    <h1 class="text-[1.75rem] font-extrabold text[#131318] ">87%</h1>
+                </div>
+               <div class="space-y-2">
+                <h3 class="text-[1.25rem] text-[#131318] font-semibold">Prayer Facility</h3>
+                <p class="" >Hockey helps Develop <br> leadership skills.</p>
+               </div>
+            </div>
+            <div class="mx-auto">
+                <div style="background-image: url(images/green.svg);" class="bg-no-repeat w-[120px] h-[120px] flex items-center justify-center">
+                    
+                    <h1 class="text-[1.75rem] font-extrabold text[#131318] ">95%</h1>
+                </div>
+               <div class="space-y-2">
+                <h3 class="text-[1.25rem] text-[#131318] font-semibold">Experienced Coach</h3>
+                <p class="" >Hockey helps Develop <br> leadership skills.</p>
+               </div>
+            </div>
+            <div class=" mx-auto">
+                <div style="background-image: url(images/yellow.svg);" class="bg-no-repeat w-[120px] h-[120px] flex items-center justify-center">
+                    
+                    <h1 class="text-[1.75rem] font-extrabold text[#131318] ">90%</h1>
+                </div>
+               <div class="space-y-2">
+                <h3 class="text-[1.25rem] text-[#131318] font-semibold">Senior Player</h3>
+                <p class="" >Hockey helps Develop <br> leadership skills.</p>
+               </div>
+            </div>
+            <div class="mx-auto">
+                <div style="background-image: url(images/blue.svg);" class="bg-no-repeat w-[120px] h-[120px] flex items-center justify-center">
+                    
+                    <h1 class="text-[1.75rem] font-extrabold text[#131318] ">80%</h1>
+                </div>
+               <div class="space-y-2">
+                <h3 class="text-[1.25rem] text-[#131318] font-semibold">Training Ground</h3>
+                <p class="" >Hockey helps Develop <br> leadership skills.</p>
+               </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- program section -->
+    <section class="mb-11">
+       <div class="space-y-6">
+        <h3 class="text-[2.25rem] font-extrabold text-[#131318] text-center">Program Sections</h3>
+        <p class="text-[1rem] font-medium text-[#212124] text-center">Ice hockey is a game between two teams who wear skates and 
+            <br> compete on an ice rink</p>
+       </div>
+       <!-- container  -->
+       <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8   mt-10 lg:mt-20">
+        <div class="bg-[url('./images/2.png')] col-span-2 w-full bg-no-repeat p-6 md:p-12 pb-14 md:pb-28 mx-auto flex-1">
+          <div class="md:w-2/4 w-full">
+            <h3 class="text-[1.75rem] font-extrabold text-white">Junior Program</h3>
+          <p class="text-[1rem] text-white font-medium mt-[1rem]">Hockey is a full-contact sport played on an ice rink between 2 teams made up of 6 players each. You score goals by shooting the puck  into your opponent's goal, and the team that has the most goals  at the end of 3 periods wins.</p>
+          <button class="bg-common-btn text-white px-6 py-2 mt-2 rounded-lg">Register Now!</button>
+          </div>
+
+        </div>
+        <div class="bg-[url('./images/3.png')] col-span-2 w-full   bg-no-repeat p-6 md:p-12 mb-14 md:pb-28 mx-auto flex-1  ">
+          <div class="md:w-2/4 w-full">
+            <h3 class="text-[1.75rem] font-extrabold text-white">Teenager Program</h3>
+          <p class="text-[1rem] text-white font-medium mt-[1rem]">Hockey is a full-contact sport played on an ice rink between 2 teams  made up of 6 players each. You score goals by shooting the puck  into your opponent's goal, and the team that has the most goals  at the end of 3 periods wins.</p>
+          <button class="bg-common-btn text-white px-6 py-2 mt-2 rounded-lg">Register Now!</button>
+          </div>
+
+        </div>
+       
+
+       </div>
+       <div class="bg-[url('./images/4.png')] w-full bg-cover  bg-no-repeat lg:pt-[207px] p-12">
+        <div class="">
+          <div class="md:w-2/4 w-full">
+            <h3 class="text-[1.75rem] text-white font-extrabold mb-4">Professional Program</h3>
+          <p class="text-[1rem] text-white font-medium">Club hockey was reborn at UNO in 1974 when then-athletic director  Don Leahy<br> hired a young, former college defenseman from Gustavus Adolphus t</p>
+          <button class="bg-common-btn text-white px-6 py-2 rounded-lg mt-6">Register Now!</button>
+          </div>
+        </div>
+        
+       </div>
+      </section>
+      <!-- product section -->
+      <section class="my-24">
+        <h3 class="text-[2.25rem] font-extrabold text-[#131318] text-center">Our New Products</h3>
+        <p class="text-[1rem] font-medium text-center text-[#13131880] mt-6">Another game often cited as the "first game of intercollegiate ice hockey played <br> in the United States" is a well-documented contest</p>
+       
+       <div class="grid gap-6 grid-cols-1 lg:grid-cols-2 mt-20">
+        <!-- container -->
+        <div class="flex gap-5 flex-col md:flex-row border border-[rgba(19, 19, 24, 0.10)] p-7">
+          <div>
+            <img src="images/5.png" alt="">
+          </div>
+          <div>
+            <div class="flex">
+              <img src="images/star.png" alt="">
+              <p>5.0</p>
+              <img src="images/eye.png" alt="">
+              <p>20</p>
+              <img src="images/hard.png" alt="">
+              <p>200</p>
+            </div>
+            <h3 class="text-[18px] font-extrabold text-[#131318] mt-3">World Cup Flags Football</h3>
+            <p class="text-[1rem] text-[#13131880] mt-3">playing continually including through </p>
+            <div class="flex gap-2">
+              <h4 class="text-[18px] font-extrabold text-[#FF4240] mt-4">Price - $22.00</h4>
+              <img src="images/buy.svg" alt="" class="mt-4">
+              <p class="text-[1rem] text-[#13131880] mt-4">Delivery Fee : Free</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="flex gap-5 flex-col md:flex-row border border-[rgba(19, 19, 24, 0.10)] p-7">
+          <div>
+            <img src="images/6.png" alt="">
+          </div>
+          <div>
+            <div class="flex">
+              <img src="images/star.png" alt="">
+              <p>5.0</p>
+              <img src="images/eye.png" alt="">
+              <p>20</p>
+              <img src="images/hard.png" alt="">
+              <p>200</p>
+            </div>
+            <h3 class="text-[18px] font-extrabold text-[#131318] mt-3">World Cup Flags Football</h3>
+            <p class="text-[1rem] text-[#13131880] mt-3">playing continually including through </p>
+            <div class="flex gap-2">
+              <h4 class="text-[18px] font-extrabold text-[#FF4240] mt-4">Price - $22.00</h4>
+              <img src="images/buy.svg" alt="" class="mt-4">
+              <p class="text-[1rem] text-[#13131880] mt-4">Delivery Fee : Free</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="flex gap-5 flex-col md:flex-row border border-[rgba(19, 19, 24, 0.10)] p-7">
+          <div>
+            <img src="images/7.png" alt="">
+          </div>
+          <div>
+            <div class="flex">
+              <img src="images/star.png" alt="">
+              <p>5.0</p>
+              <img src="images/eye.png" alt="">
+              <p>20</p>
+              <img src="images/hard.png" alt="">
+              <p>200</p>
+            </div>
+            <h3 class="text-[18px] font-extrabold text-[#131318] mt-3">World Cup Flags Football</h3>
+            <p class="text-[1rem] text-[#13131880] mt-3">playing continually including through </p>
+            <div class="flex gap-2">
+              <h4 class="text-[18px] font-extrabold text-[#FF4240] mt-4">Price - $22.00</h4>
+              <img src="images/buy.svg" alt="" class="mt-4">
+              <p class="text-[1rem] text-[#13131880] mt-4">Delivery Fee : Free</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="flex gap-5 flex-col md:flex-row border border-[rgba(19, 19, 24, 0.10)] p-7">
+          <div>
+            <img src="images/8.png" alt="">
+          </div>
+          <div>
+            <div class="flex">
+              <img src="images/star.png" alt="">
+              <p>5.0</p>
+              <img src="images/eye.png" alt="">
+              <p>20</p>
+              <img src="images/hard.png" alt="">
+              <p>200</p>
+            </div>
+            <h3 class="text-[18px] font-extrabold text-[#131318] mt-3">Cap For Hockeys</h3>
+            <p class="text-[1rem] text-[#13131880] mt-3">playing continually including through </p>
+            <div class="flex gap-2">
+              <h4 class="text-[18px] font-extrabold text-[#FF4240] mt-4">Price - $22.00</h4>
+              <img src="images/buy.svg" alt="" class="mt-4">
+              <p class="text-[1rem] text-[#13131880] mt-4">Delivery Fee : Free</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="flex gap-5 flex-col md:flex-row border border-[rgba(19, 19, 24, 0.10)] p-7">
+          <div>
+            <img src="images/9.png" alt="">
+          </div>
+          <div>
+            <div class="flex">
+              <img src="images/star.png" alt="">
+              <p>5.0</p>
+              <img src="images/eye.png" alt="">
+              <p>20</p>
+              <img src="images/hard.png" alt="">
+              <p>200</p>
+            </div>
+            <h3 class="text-[18px] font-extrabold text-[#131318] mt-3">World Cup Flags Football</h3>
+            <p class="text-[1rem] text-[#13131880] mt-3">playing continually including through </p>
+            <div class="flex gap-2">
+              <h4 class="text-[18px] font-extrabold text-[#FF4240] mt-4">Price - $22.00</h4>
+              <img src="images/buy.svg" alt="" class="mt-4">
+              <p class="text-[1rem] text-[#13131880] mt-4">Delivery Fee : Free</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="flex gap-5 flex-col md:flex-row border border-[rgba(19, 19, 24, 0.10)] p-7">
+          <div>
+            <img src="images/10.png" alt="">
+          </div>
+          <div>
+            <div class="flex">
+              <img src="images/star.png" alt="">
+              <p>5.0</p>
+              <img src="images/eye.png" alt="">
+              <p>20</p>
+              <img src="images/hard.png" alt="">
+              <p>200</p>
+            </div>
+            <h3 class="text-[18px] font-extrabold text-[#131318] mt-3">World Cup Flags Football</h3>
+            <p class="text-[1rem] text-[#13131880] mt-3">playing continually including through </p>
+            <div class="flex gap-2">
+              <h4 class="text-[18px] font-extrabold text-[#FF4240] mt-4">Price - $22.00</h4>
+              <img src="images/buy.svg" alt="" class="mt-4">
+              <p class="text-[1rem] text-[#13131880] mt-4">Delivery Fee : Free</p>
+            </div>
+          </div>
+
+        </div>
+
+       </div>
+
+      </section>
+      <section class="my-28">
+       <div class="space-y-6">
+        <h3 class="text-[2.25rem] text-center text-[#131318] font-extrabold">Clients Question</h3>
+        <p class="text-[1.25rem] font-medium text-center text-[#13131880]">Another game often cited as the "first game of intercollegiate ice <br> hockey played in the United States" i</p>
+
+       </div>
+       <div class="flex flex-col lg:flex-row mt-10 md:mt-20">
+        <!-- container -->
+        <div class="w-full lg:w-1/2">
+          <img src="images/11.png" alt="" class="w-[90%] mx-auto md:mx-0">
+        </div>
+        <div class="w-full lg:w-1/2">
+          
+          <div class="collapse collapse-plus  p-6">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title  text-[1.25rem] font-bold text-[#131318]">
+              Our Equipment
+            </div>
+            <div class="collapse-content"> 
+              <p>Another game often cited as the</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus  border-t-2 border-[#13131831]  p-6">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title  text-[1.25rem] font-bold text-[#131318]">
+              Hockey Training
+            </div>
+            <div class="collapse-content"> 
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus  border-t-2 border-[#13131831]  p-6">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-[1.25rem] font-bold text-[#131318]">
+              Private Lessons
+            </div>
+            <div class="collapse-content"> 
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus  border-t-2 border-[#13131831]  p-6">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-[1.25rem] font-bold text-[#131318]">
+              Ski Touring
+            </div>
+            <div class="collapse-content"> 
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus  border-t-2 border-[#13131831]  p-6">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-[1.25rem] font-bold text-[#131318]">
+              Booking
+            </div>
+            <div class="collapse-content"> 
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus border-t-2 border-[#13131831] p-6">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-[1.25rem] font-bold text-[#131318]">
+              Pricings
+            </div>
+            <div class="collapse-content"> 
+              <p>hello</p>
+            </div>
+          </div>
+        </div>
+        
+        
+       </div>
+      </section>
+
+    <!-- get section -->
+    <section class="my-28">
+   <div class="space-y-6">
+    <h3 class="text-[2.25rem] font-extrabold text-[#131318] text-center">Get In Touch</h3>
+    <p class="text-[1rem] font-medium text-[#0d0d1899] text-center">Far too many website designers put contact pages near  the bottom of <br> their priority list in terms of copywriting and design</p>
+   </div>
+<!-- container -->
+<div class="flex gap-6 flex-col lg:flex-row mt-10  md:mt-20">
+<div class="space-y-6 md:w-[30%] border border-[#0D0D121A] p-6 md:p-12" >
+    <div class="bg-[#BCED6D19] p-8 rounded-2xl ">
+      <div class="mb-6"><img src="images/Group 1171275317.png" alt=""></div>
+      <div class="space-y-2">
+        <p class="text-[#0d0d1866] text9[1.12rem] font-medium">Phone Number : </p>
+      <h4 class="text-[1.25rem] font-extrabold text-[#131318]">(+62) 123-321-543</h4>
+      </div>
+    </div>
+    <div class="bg-[#FDDD5F19] p-8 rounded-2xl">
+      <div class="mb-6"><img src="images/Group 1171275318.png" alt=""></div>
+      <div class="space-y-2">
+        <p class="text-[#0d0d1866] text9[1.12rem] font-medium">Email :  </p>
+      <h4 class="text-[1.25rem] font-extrabold text-[#131318]">hockeys@support.com</h4>
+      </div>
+    </div>
+    <div class="bg-[#629CF31A] p-8 rounded-2xl">
+      <div class="mb-6"><img src="images/Group 1171275321.png" alt=""></div>
+      <div class="space-y-2">
+        <p class="text-[#0d0d1866] text9[1.12rem] font-medium">Location :  </p>
+      <h4 class="text-[1.25rem] font-extrabold text-[#131318]">152/1 Mohakhali Wireless Gate</h4>
+      </div>
+    </div>
+
+  </div>
+  <div>
+    <!--  -->
+    <div class="flex gap-6 flex-col md:flex-row  md:w-[70%]">
+      <div class="">
+        <h3 class="text-[1.25rem] font-semibold text-[#131318]">Your Name</h3>
+    <input type="text" placeholder="Enter your full name" class="bg-[#13131808] p-6 w-[430px] rounded-2xl outline-none">
+      </div>
+      <div class="">
+        <h3 class="text-[1.25rem] font-semibold text-[#131318]">Your Email</h3>
+    <input type="email" placeholder="Enter your email" class="bg-[#13131808] p-6 w-[430px] rounded-2xl outline-none">
+      </div>
+    </div>
+   <div class="flex flex-col md:flex-row gap-6">
+    <div>
+      
+      <h3 class="text-[1.25rem] font-semibold text-[#131318]">Subject</h3>
+  <input type="text" placeholder="Enter your subject" class="bg-[#13131808] p-6 w-[430px] rounded-2xl outline-none">
+    </div>
+    <div>
+      <h3 class="text-[1.25rem] font-semibold text-[#131318]">Phone Number</h3>
+  <input type="email" placeholder="Enter your phone number" class="bg-[#13131808] p-6 w-[430px] rounded-2xl outline-none">
+    </div>
+   </div>
+   <div>
+    <!-- text -->
+    <h3 class="text-[1.25rem] font-semibold text-[#131318]">Message</h3>
+    <label class="form-control">
+      <div class="label">
+       
+      </div>
+      <textarea class="textarea textarea-bordered md:h-[370px] w-full h-[200px] md:w-[880px]" placeholder="Write your message"></textarea>
+      <div class="label">
+        
+      </div>
+    </label>
+    <button class="bg-common-btn w-full py-4 rounded-lg text-white">Send Message</button>
+
+   </div>
+    </div>
+
+    <!--  -->
+ 
+
+  </div>
+
+</div>
+    </section>
+    <!-- main -->
+    <section class="my-28">
+      <div class="bg-[#0D0D1208] p-9 rounded-xl space-y-6">
+        <h3 class="text-[1.5rem] font-extrabold text-[#131318] text-center">Social Media</h3>
+      <div class="flex justify-center items-center">
+        <img src="images/Social.svg" alt="">
+      </div>
+      </div>
+
+    </section>
+
+   </main>
+
+   
+
+    
+
+
+</body>
+</html>
